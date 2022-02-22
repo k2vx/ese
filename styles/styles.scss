@@ -1,0 +1,100 @@
+@import "~normalize.css";
+@import "odibee.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Odibee Sans', cursive;
+  background: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: black;
+}
+
+.stats {
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  #score {
+    font-size: 5rem;
+    line-height: 1;
+    color: #cccccc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #maxscore {
+    opacity: 0.5;
+    font-size: 3rem;
+    color: #ffffff;
+  }
+
+  strong {
+    color: #ff0043;
+  }
+
+  button {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    background: unset;
+    border: 1px solid #ff0043;
+    color: #ff0043;
+
+    & span {
+      color: #cccccc;
+    }
+  }
+
+  #AiTag {
+    display: block;
+    opacity: 0.2;
+    font-size: 2rem;
+    color: #ffffff;
+  }
+}
+
+#mob {
+  display: none;
+  width: 100%;
+
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  button {
+    width: 100vw;
+    height: 15vh;
+    opacity: 0.2;
+    background: #cccccc;
+    border: 1px solid #cccccc;
+  }
+
+  #mobInside {
+    width: 100%;
+    display: flex;
+  }
+}
